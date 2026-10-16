@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <title>Your game</title>
+  </head>
+  <body>
+    <div id="game"></div>
+    <div id="hud">
+      <div class="eyebrow"><span id="game-title">Your game</span><span id="phase">READY</span></div>
+      <div class="scoreline">
+        <span id="score">0</span><span class="best">BEST <b id="best">0</b></span>
+      </div>
+    </div>
+    <div id="menu">
+      <span class="edition" id="game-theme">An original world</span>
+      <h1>Your game</h1>
+      <p>A new adventure from your imagination.</p>
+      <button id="play">Play <span>↗</span></button>
+      <small id="instructions">Touch to play</small>
+    </div>
+    <div id="over" hidden>
+      <span class="edition">GAME COMPLETE</span>
+      <h2>Play again?</h2>
+      <p id="result"></p>
+      <button id="restart">Try again <span>↗</span></button>
+    </div>
+    <div id="controls">
+      <button id="pause" aria-label="Pause game">Ⅱ</button>
+      <button id="mute" aria-label="Toggle sound">♪</button>
+    </div>
+    <div id="paused" hidden>PAUSED<small>Tap Ⅱ to resume</small></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

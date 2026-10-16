@@ -1,0 +1,53 @@
+{
+  "cli": {
+    "version": ">=16.0.0"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "environment": "development",
+      "channel": "development",
+      "env": {
+        "APP_ENV": "development",
+        "EXPO_PUBLIC_APP_ENV": "development",
+        "EXPO_NO_DOTENV": "1",
+        "EXPO_PUBLIC_APP_INTEGRITY_MODE": "local-development"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      },
+      "environment": "production",
+      "channel": "production",
+      "env": {
+        "APP_ENV": "production",
+        "EXPO_PUBLIC_APP_ENV": "production",
+        "EXPO_NO_DOTENV": "1",
+        "EXPO_PUBLIC_APP_INTEGRITY_MODE": "required",
+        "EXPO_PUBLIC_POSTHOG_ENABLED": "false",
+        "EXPO_PUBLIC_ANALYTICS_ENVIRONMENT": "production",
+        "EXPO_PUBLIC_APP_RELEASE": "0.1.0"
+      }
+    },
+    "production": {
+      "autoIncrement": true,
+      "environment": "production",
+      "channel": "production",
+      "env": {
+        "APP_ENV": "production",
+        "EXPO_PUBLIC_APP_ENV": "production",
+        "EXPO_NO_DOTENV": "1",
+        "EXPO_PUBLIC_APP_INTEGRITY_MODE": "required",
+        "EXPO_PUBLIC_POSTHOG_ENABLED": "false",
+        "EXPO_PUBLIC_ANALYTICS_ENVIRONMENT": "production",
+        "EXPO_PUBLIC_APP_RELEASE": "0.1.0"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

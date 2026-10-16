@@ -1,0 +1,38 @@
+appId: com.aigames.creator.dev
+name: Real Supabase account authentication
+env:
+  TEST_EMAIL: mobile-e2e@example.com
+  TEST_PASSWORD: Games-mobile-test-2048!
+---
+- launchApp
+- openLink: aigames-dev://auth
+- tapOn:
+    text: '^Open$'
+    optional: true
+- tapOn: New here.*
+- tapOn: Player name
+- inputText: Mobile Player
+- tapOn: Email address
+- inputText: ${TEST_EMAIL}
+- tapOn: Password
+- inputText: ${TEST_PASSWORD}
+- pressKey: Enter
+- tapOn: .*16 or older.*
+- tapOn: Create account
+- assertVisible: ai games.*
+- openLink: aigames-dev://settings
+- tapOn:
+    text: '^Open$'
+    optional: true
+- tapOn: Sign out
+- openLink: aigames-dev://auth
+- tapOn:
+    text: '^Open$'
+    optional: true
+- tapOn: Email address
+- inputText: ${TEST_EMAIL}
+- tapOn: Password
+- inputText: ${TEST_PASSWORD}
+- pressKey: Enter
+- tapOn: Sign in
+- assertVisible: ai games.*

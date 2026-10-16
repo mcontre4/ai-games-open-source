@@ -1,0 +1,26 @@
+name: Bug report
+description: Report a reproducible problem using sanitized details.
+body:
+  - type: markdown
+    attributes:
+      value: 'For vulnerabilities, use SECURITY.md. Never include keys, tokens, personal data or private environment files.'
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Use a minimal prompt or the deterministic sample where possible.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Commit, OS, Node/pnpm versions, device/simulator and relevant sanitized logs.
+    validations:
+      required: true

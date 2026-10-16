@@ -1,0 +1,11 @@
+node_modules
+.git
+.env*
+work
+apps/mobile/ios
+apps/mobile/android
+test-results
+
+**/build
+**/.cxx
+**/.gradle

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <title>Neon Comet</title>
+  </head>
+  <body>
+    <div id="game"></div>
+    <div id="hud">
+      <div class="eyebrow">NEON COMET <span id="phase">READY</span></div>
+      <div class="scoreline">
+        <span id="score">0</span><span class="best">BEST <b id="best">0</b></span>
+      </div>
+    </div>
+    <div id="menu">
+      <span class="edition">THE MIDNIGHT RUN</span>
+      <h1>NEON<br /><em>COMET</em></h1>
+      <p>One hovercraft. An endless city.<br />How far will you fly?</p>
+      <button id="play">Start flying <span>↗</span></button
+      ><small>DRAG TO STEER · COLLECT CRYSTALS</small>
+    </div>
+    <div id="over" hidden>
+      <span class="edition">RUN COMPLETE</span>
+      <h2>That was<br /><em>electric.</em></h2>
+      <p id="result"></p>
+      <button id="restart">Fly again <span>↗</span></button>
+    </div>
+    <div id="controls">
+      <button id="pause" aria-label="Pause game">Ⅱ</button
+      ><button id="mute" aria-label="Toggle sound">♪</button>
+    </div>
+    <div id="paused" hidden>PAUSED<br /><small>Tap Ⅱ to resume</small></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

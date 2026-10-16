@@ -1,0 +1,1 @@
+{"version":"0.0.1","configurations":[{"name":"ai-games-api","runtimeExecutable":"pnpm","runtimeArgs":["dev:api"],"port":4100},{"name":"ai-games-mobile","runtimeExecutable":"pnpm","runtimeArgs":["dev:mobile"],"port":8081}]}

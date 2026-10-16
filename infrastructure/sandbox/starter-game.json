@@ -1,0 +1,22 @@
+{
+  "title": "Untitled game",
+  "description": "An original game generated from your prompt.",
+  "artDirection": {
+    "theme": "Unspecified world",
+    "visualStyle": "Neutral starter, to be replaced by this game's individual visual direction.",
+    "animationStyle": "Smooth frame-rate-independent movement and responsive transitions at 60 FPS.",
+    "imagePrompt": "A new environment described by the game creator's prompt.",
+    "quality": "premium",
+    "pixelArt": false,
+    "typography": "sans",
+    "cornerRadius": 12,
+    "palette": {
+      "background": "#f4f4f4",
+      "surface": "#ffffff",
+      "text": "#242424",
+      "muted": "#595959",
+      "accent": "#424242",
+      "onAccent": "#ffffff"
+    }
+  }
+}

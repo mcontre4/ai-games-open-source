@@ -1,0 +1,10 @@
+packages:
+  - apps/*
+  - packages/*
+allowBuilds:
+  '@posthog/cli': true
+  esbuild: true
+  sharp: true
+  supabase: true
+minimumReleaseAgeExclude:
+  - prettier@3.9.10

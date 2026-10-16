@@ -1,0 +1,21 @@
+repos:
+  - repo: local
+    hooks:
+      - id: typescript-quality
+        name: TypeScript quality and architecture
+        entry: pnpm typecheck
+        language: system
+        pass_filenames: false
+        always_run: true
+      - id: boundaries
+        name: Lint and dependency boundaries
+        entry: pnpm lint
+        language: system
+        pass_filenames: false
+        always_run: true
+      - id: domain-security
+        name: Domain and security tests
+        entry: pnpm test
+        language: system
+        pass_filenames: false
+        always_run: true

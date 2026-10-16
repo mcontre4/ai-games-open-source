@@ -1,0 +1,17 @@
+{
+  "game": {
+    "id": "game_neoncomet",
+    "ownerId": "00000000-0000-0000-0000-000000000000",
+    "title": "Neon Comet",
+    "description": "Ride the midnight skyline. Dodge the city, collect energy crystals and chase your best run.",
+    "orientation": "portrait",
+    "currentVersionId": "ver_neon27fa803cce29c71a68b9",
+    "public": true,
+    "fixture": true,
+    "createdAt": "2026-10-10T00:00:00Z"
+  },
+  "versionId": "ver_neon27fa803cce29c71a68b9",
+  "publicKey": "9116bcd940079d37085d342cf533ab3f11b4cfa771658d7475442f0dd836be5f",
+  "checksum": "c122cd12be16099138f8c2d792c3d9cadb08bbb0e8d6e0c32e2fdc3731b7c423",
+  "bytes": 509722
+}

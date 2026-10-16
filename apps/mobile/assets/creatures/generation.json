@@ -1,0 +1,45 @@
+{
+  "mode": "Built-in image_gen",
+  "assets": [
+    {
+      "id": "blob",
+      "prompt": "Use case: stylized-concept. Asset type: square profile avatar for a playful game creation app. Generate one funny little creature: a round mint green one-eyed blob with tiny horns, a crooked grin and short stubby arms. Polished soft clay 3D illustration, expressive friendly face, close-up centered head and upper body, generous safe margin for circular cropping, flat pale mint backdrop, soft studio lighting. No text, logos, frame or watermark."
+    },
+    {
+      "id": "sprout",
+      "prompt": "Use case: stylized-concept. Asset type: square profile avatar for a playful game creation app. Generate one funny little creature: a goofy peach-colored fluffy creature with two oversized ears and a tiny leaf sprouting from its head. Polished soft clay 3D illustration, expressive friendly face, close-up centered head and upper body, generous safe margin for circular cropping, flat pale peach backdrop, soft studio lighting. No text, logos, frame or watermark."
+    },
+    {
+      "id": "noodle",
+      "prompt": "Use case: stylized-concept. Asset type: square profile avatar for a playful game creation app. Generate one funny little creature: a lavender noodle-shaped creature curled into a pear shape, two mismatched eyes and tiny buck teeth. Polished soft clay 3D illustration, expressive friendly face, close-up centered head and upper body, generous safe margin for circular cropping, flat pale lavender backdrop, soft studio lighting. No text, logos, frame or watermark."
+    },
+    {
+      "id": "puddle",
+      "prompt": "Use case: stylized-concept. Asset type: square profile avatar for a playful game creation app. Generate one funny little creature: a sky-blue squishy frog-like creature with huge round cheeks and a delighted silly smile. Polished soft clay 3D illustration, expressive friendly face, close-up centered head and upper body, generous safe margin for circular cropping, flat pale blue backdrop, soft studio lighting. No text, logos, frame or watermark."
+    },
+    {
+      "id": "crumb",
+      "prompt": "Use case: stylized-concept. Asset type: square profile avatar for a playful game creation app. Generate one funny little creature: a warm yellow round furry creature with tiny antlers and a single snaggletooth. Polished soft clay 3D illustration, expressive friendly face, close-up centered head and upper body, generous safe margin for circular cropping, flat pale buttery yellow backdrop, soft studio lighting. No text, logos, frame or watermark."
+    },
+    {
+      "id": "wiggle",
+      "prompt": "Use case: stylized-concept. Asset type: square profile avatar for a playful game creation app. Generate one funny little creature: a coral pink little jelly creature with four stubby tentacles and sleepy half-closed eyes. Polished soft clay 3D illustration, expressive friendly face, close-up centered head and upper body, generous safe margin for circular cropping, flat pale rose backdrop, soft studio lighting. No text, logos, frame or watermark."
+    },
+    {
+      "id": "moss",
+      "prompt": "Use case: stylized-concept. Asset type: square profile avatar for a playful game creation app. Generate one funny little creature: a sage-green fluffy forest creature with mushroom-shaped ears and an inquisitive face. Polished soft clay 3D illustration, expressive friendly face, close-up centered head and upper body, generous safe margin for circular cropping, flat pale sage backdrop, soft studio lighting. No text, logos, frame or watermark."
+    },
+    {
+      "id": "pip",
+      "prompt": "Use case: stylized-concept. Asset type: square profile avatar for a playful game creation app. Generate one funny little creature: a turquoise tiny pear-shaped dragon with absurdly small wings and a surprised open mouth. Polished soft clay 3D illustration, expressive friendly face, close-up centered head and upper body, generous safe margin for circular cropping, flat pale aqua backdrop, soft studio lighting. No text, logos, frame or watermark."
+    },
+    {
+      "id": "fizz",
+      "prompt": "Use case: stylized-concept. Asset type: square profile avatar for a playful game creation app. Generate one funny little creature: a lilac fuzzy creature with three friendly eyes and a wild tuft of hair. Polished soft clay 3D illustration, expressive friendly face, close-up centered head and upper body, generous safe margin for circular cropping, flat pale lilac backdrop, soft studio lighting. No text, logos, frame or watermark."
+    },
+    {
+      "id": "orbit",
+      "prompt": "Use case: stylized-concept. Asset type: square profile avatar for a playful game creation app. Generate one funny little creature: a periwinkle round space creature with two antennae and a cheeky lopsided grin. Polished soft clay 3D illustration, expressive friendly face, close-up centered head and upper body, generous safe margin for circular cropping, flat pale periwinkle backdrop, soft studio lighting. No text, logos, frame or watermark."
+    }
+  ]
+}

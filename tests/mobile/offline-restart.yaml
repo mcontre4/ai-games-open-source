@@ -1,0 +1,16 @@
+appId: com.aigames.creator.dev
+name: Installed game restarts with backend services stopped
+---
+- launchApp
+- openLink: aigames-dev://game/game_neoncomet
+- tapOn:
+    text: '^Open$'
+    optional: true
+- assertVisible: Play game
+- tapOn: Play game
+- assertVisible: Start flying.*
+- assertVisible: BEST.*
+- takeScreenshot: offline-restored-game
+- tapOn: Start flying.*
+- assertVisible: FLYING|FINISHED
+- takeScreenshot: offline-playing-game

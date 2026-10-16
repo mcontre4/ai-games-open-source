@@ -1,0 +1,60 @@
+appId: com.aigames.creator.dev
+name: Creature profile settings with a disposable Supabase account
+---
+- launchApp
+- openLink: aigames-dev://auth
+- tapOn:
+    text: '^Open$'
+    optional: true
+- tapOn:
+    id: xmark
+    optional: true
+- tapOn: Email address
+- inputText: ${TEST_EMAIL}
+- tapOn: Password
+- inputText: ${TEST_PASSWORD}
+- pressKey: Enter
+- tapOn: Sign in
+- assertVisible: ai games.*
+- openLink: aigames-dev://settings
+- tapOn:
+    text: '^Open$'
+    optional: true
+- assertVisible: CHOOSE YOUR CREATURE
+- tapOn: Choose pip
+- tapOn:
+    id: profile-username
+- eraseText
+- inputText: ${TEST_USERNAME}
+- pressKey: Enter
+- scrollUntilVisible:
+    element:
+      id: profile-display-name
+    direction: DOWN
+- tapOn:
+    id: profile-display-name
+- eraseText
+- inputText: Native Creature
+- pressKey: Enter
+- scrollUntilVisible:
+    element:
+      text: Save profile & preferences
+    direction: DOWN
+- tapOn: Save profile & preferences
+- assertVisible: Profile and preferences saved.
+- scrollUntilVisible:
+    element:
+      text: View my profile
+    direction: DOWN
+    centerElement: true
+- tapOn: View my profile
+- assertVisible: Native Creature
+- assertVisible: CREATED GAMES.*
+- takeScreenshot: work/native-creator-profile
+- tapOn: Edit profile
+- scrollUntilVisible:
+    element:
+      text: CHOOSE YOUR CREATURE
+    direction: UP
+- assertVisible: Choose pip
+- takeScreenshot: work/native-creature-settings

@@ -1,0 +1,1 @@
+-- Game fixture is explicitly seeded by pnpm fixture:seed.

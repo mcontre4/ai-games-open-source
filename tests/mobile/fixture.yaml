@@ -1,0 +1,38 @@
+appId: com.aigames.creator.dev
+name: Bundled package installation and native gameplay
+---
+- launchApp:
+    clearState: true
+- openLink: aigames-dev://game/game_neoncomet
+- tapOn:
+    text: '^Open$'
+    optional: true
+- assertVisible: Neon Comet
+- tapOn:
+    text: Download bundled sample
+    optional: true
+- tapOn: Play game
+- assertVisible: Start flying.*
+- takeScreenshot: work/screenshots/ios-game-menu
+- tapOn: Start flying.*
+- waitForAnimationToEnd:
+    timeout: 6000
+- assertVisible: FLYING|FINISHED
+- swipe:
+    start: 55%, 55%
+    end: 55%, 32%
+    duration: 2000
+- takeScreenshot: work/screenshots/ios-game-playing
+- tapOn:
+    id: exit-game
+- assertVisible: ai games.*
+- stopApp
+- launchApp
+- openLink: aigames-dev://game/game_neoncomet
+- tapOn:
+    text: '^Open$'
+    optional: true
+- assertVisible: Play game
+- tapOn: Play game
+- assertVisible: BEST.*
+- takeScreenshot: work/screenshots/ios-game-restored

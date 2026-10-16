@@ -1,0 +1,196 @@
+:root {
+  --background: #f4f4f4;
+  --surface: #ffffff;
+  --text: #242424;
+  --muted: #595959;
+  --accent: #424242;
+  --onAccent: #ffffff;
+  --corner-radius: 12px;
+  --game-font: system-ui, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  overscroll-behavior: none;
+  touch-action: none;
+  background: var(--background);
+  color: var(--text);
+  font-family: var(--game-font);
+}
+#game {
+  position: fixed;
+  inset: 0;
+}
+canvas {
+  display: block;
+}
+#hud {
+  position: absolute;
+  top: max(86px, env(safe-area-inset-top));
+  left: 24px;
+  right: 24px;
+  pointer-events: none;
+  padding: 14px 18px;
+  background: color-mix(in srgb, var(--surface) 88%, transparent);
+  border-radius: var(--corner-radius);
+}
+.eyebrow {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+#phase {
+  float: right;
+  color: var(--accent);
+}
+.scoreline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+#score {
+  font-size: 36px;
+  font-weight: 800;
+}
+.best {
+  font-size: 10px;
+  color: var(--muted);
+}
+.best b {
+  color: var(--text);
+  margin-left: 5px;
+}
+#menu,
+#over {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 32px;
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--surface) 15%, transparent),
+    color-mix(in srgb, var(--surface) 94%, transparent)
+  );
+}
+.edition {
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+h1,
+h2 {
+  font-size: clamp(38px, 12vw, 74px);
+  line-height: 1.04;
+  letter-spacing: -1px;
+  margin: 18px 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+p {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0 0 24px;
+  max-width: 480px;
+}
+button {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--onAccent);
+  background: var(--accent);
+  border: 0;
+  border-radius: var(--corner-radius);
+  padding: 16px 23px;
+  min-width: 190px;
+  text-align: left;
+  cursor: pointer;
+  transition: transform 120ms ease;
+}
+button:active {
+  transform: scale(0.96);
+}
+button span {
+  float: right;
+  margin-left: 24px;
+}
+small {
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  max-width: 100%;
+}
+#controls {
+  position: absolute;
+  bottom: max(24px, env(safe-area-inset-bottom));
+  right: 22px;
+  display: flex;
+  gap: 10px;
+}
+#controls button {
+  min-width: 46px;
+  width: 46px;
+  height: 46px;
+  padding: 0;
+  text-align: center;
+  color: var(--text);
+  background: color-mix(in srgb, var(--surface) 90%, transparent);
+  font-size: 18px;
+}
+#paused {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: color-mix(in srgb, var(--surface) 85%, transparent);
+  font-size: 28px;
+  font-weight: 800;
+  pointer-events: none;
+}
+#over[hidden],
+#menu[hidden],
+#paused[hidden] {
+  display: none;
+}
+@media (orientation: landscape) {
+  #menu,
+  #over {
+    padding: 28px 10%;
+  }
+  h1,
+  h2 {
+    font-size: 44px;
+    margin: 12px 0;
+  }
+  #hud {
+    top: 18px;
+    right: 24px;
+    left: auto;
+    width: 220px;
+  }
+  #menu p {
+    margin-bottom: 12px;
+    max-width: 460px;
+  }
+  #menu button {
+    padding: 12px 22px;
+  }
+  #menu small {
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,11 @@
+node_modules
+work
+**/dist
+apps/mobile/ios
+apps/mobile/android
+pnpm-lock.yaml
+infrastructure/sandbox/package-lock.json
+
+**/build
+**/.cxx
+**/.gradle

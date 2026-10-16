@@ -1,0 +1,18 @@
+{
+  "tool": "built-in image_gen",
+  "purpose": "Original illustrative examples for the game view selector, not generated game output.",
+  "assets": [
+    {
+      "file": "2d.png",
+      "prompt": "Use case: stylized-concept. Asset: image for a mobile game's 2D view selector. Original screenshot-like illustration of a polished 2D side scrolling platform video game, small fox jumping between grassy platforms in a cozy forest, acorns and flowers, clean flat side view with no perspective, charming painted sprites, warm green and orange colors. Wide landscape 3:2 framing. No text, no logos, no HUD, no frames, single image."
+    },
+    {
+      "file": "3d.png",
+      "prompt": "Use case: stylized-concept. Asset: image for a mobile game's 3D view selector. Original screenshot-like illustration of a polished 3D endless runner video game, youthful original runner character seen from behind running down three lanes of a colorful city train route, rows of collectible gold coins, distant trains and buildings, strong perspective receding to horizon, playful rounded 3D forms in the spirit of mobile endless runners such as Subway Surfers but with original character and city. Wide landscape 3:2 framing. No text, no logos, no HUD, no frames, single image."
+    },
+    {
+      "file": "isometric.png",
+      "prompt": "Use case: stylized-concept. Asset: image for a mobile game's 3D isometric view selector. Original screenshot-like illustration of a polished 3D isometric adventure video game, small explorer on a grassy island with winding stone paths, tiny cozy house, trees and collectible glowing gems, orthographic camera from above at a diagonal angle, clear sculpted three dimensional depth and cube shaped terrain with visible sides, playful rounded 3D materials, warm colors. Wide landscape 3:2 framing. No text, no logos, no HUD, no frames, single image."
+    }
+  ]
+}

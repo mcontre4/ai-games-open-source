@@ -19,13 +19,19 @@ export async function bindSupabaseLoopback() {
     execFileSync('docker', ['context', 'inspect'], { encoding: 'utf8' }),
   )[0] as { Endpoints: { docker: { Host: string } } };
   const socketPath = context.Endpoints.docker.Host.replace('unix://', '');
+  // The CLI negotiates with the selected daemon; hosted Linux engines can be older
+  // than Docker Desktop. Never require one developer machine's API version.
+  const apiVersion = execFileSync('docker', ['version', '--format', '{{.Server.APIVersion}}'], {
+    encoding: 'utf8',
+  }).trim();
+  if (!/^\d+\.\d+$/.test(apiVersion)) throw new Error('Invalid Docker daemon API version.');
   const call = (method: string, path: string, body?: unknown) =>
     new Promise<unknown>((resolve, reject) => {
       const data = body === undefined ? undefined : JSON.stringify(body);
       const request = http.request(
         {
           socketPath,
-          path: `/v1.51${path}`,
+          path: `/v${apiVersion}${path}`,
           method,
           headers: data
             ? { 'Content-Type': 'application/json', 'Content-Length': Buffer.byteLength(data) }
